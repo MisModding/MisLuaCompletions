@@ -1,0 +1,19 @@
+{
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.workspace.library": [
+        "."
+    ],
+    "Lua.workspace.ignoreDir": [
+        ".vscode",
+        "miscreated/.unprocessed" // DO NOT READ FROM .unprocessed
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global",
+    ],
+    "Lua.diagnostics.globals": [
+        "ENTITY_FLAG_SERVER_ONLY",
+        "ENTITY_FLAG_CLIENT_ONLY",
+    ],
+    "licenser.projectName": "MisLuaCompletions",
+    "licenser.license": "GPLv3"
+}

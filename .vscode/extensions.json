@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "sumneko.lua",
+        "aaron-bond.better-comments",
+        "Koihik.vscode-lua-format",
+        "antixdevelopment.plasticluawrap",
+    ]
+}
