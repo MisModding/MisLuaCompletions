@@ -4,7 +4,7 @@
 --- CE3 CryAction Interface
 ---| Contains basic Engine methods
 ---@class CryAction
-local CryAction = {
+CryAction = {
     LoadXML = function(definitionFile, dataFile) end,
 
     SaveXML = function(definitionFile, dataFile, dataTable) end,

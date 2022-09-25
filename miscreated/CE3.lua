@@ -33,3 +33,21 @@ SCANDIR_FILES = _G["SCANDIR_FILES"];
 --- nScanMode SUBDIRECTORIES
 ---@see System.ScanDirectory();
 SCANDIR_SUBDIRS = _G["SCANDIR_SUBDIRS"];
+
+
+
+--
+-- ─── CE3 FUNCTIONS ──────────────────────────────────────────────────────────────
+--
+
+--- print a message to the console/log
+function Log(formatstr,...) end
+
+--- print a warning to the console/log
+function LogWarning(formatstr,...) end
+
+--- print an error to the console/log
+function LogError(formatstr,...) end
+
+--- print a message to the console/log
+function LogAlways(formatstr,...) end
