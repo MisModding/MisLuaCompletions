@@ -17,6 +17,4 @@
 
 ---@alias tableIndex    number                      `table index`
 ---@alias filePath      string                      `file path`
----@alias entityList    table<tableIndex,entity>    `entity list`
----@alias playerList    table<tableIndex,player>    `player list`
 ---@alias steam64Id     string                      `Players Steam64Id`

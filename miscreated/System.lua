@@ -71,8 +71,8 @@ function System.GetConfigSpec() end
 function System.IsMultiplayer() end
 
 ---* Fetch an Entity using its entityId
----@param entityId userdata
----@return entity
+---@param entityId EntityId
+---@return CE3.Entity|any `Entity or nil`
 function System.GetEntity(entityId) end
 
 
@@ -93,11 +93,20 @@ function System.GetEntities() end
 
 ---* Fetch All Entities of a Specified Class
 ---@param class string
----@return table
+---@return CE3.Entity[]|nil
 function System.GetEntitiesByClass(class) end
 
+---* Fetch All Entities of a Specified Class in the given Sphere
+---@param center vector3
+---@param radius number
+---@return CE3.Entity[]|nil
 function System.GetEntitiesInSphere(center,radius) end
 
+---* Fetch All Entities of a Specified Class in the given Sphere
+---@param center vector3 center of the sphere
+---@param radius number radius of the sphere
+---@param EntityClass string Entity Class to filter
+---@return CE3.Entity[]|nil
 function System.GetEntitiesInSphereByClass(center,radius, EntityClass) end
 
 --- Scans a directory.
@@ -118,10 +127,13 @@ function System.GetPhysicalEntitiesInBoxByClass(center,radius, className) end
 function System.GetNearestEntityByClass(center,radius, className) end
 
 ---* Fetch an Entity using its Name
----@param name string
----@return entity
-function System.GetEntityByName(name) end
+---@param sEntityName string
+---@return CE3.Entity|any
+function System.GetEntityByName(sEntityName) end
 
+---* Fetch an EntityId using its Name
+---@param sEntityName string
+---@return EntityId|any
 function System.GetEntityIdByName(sEntityName) end
 
 function System.DeformTerrainInternal( nameIsMaterial) end
@@ -164,9 +176,14 @@ function System.GetCVar(key) end
 ---@param sHelp string `Help for the command usage.`
 function System.AddCCommand(sCCommandName, sCommand, sHelp) end
 
-function System.RemoveCCommand() end
+--- Unregister a Console Commmand
+---@param sCCommandName string `C command name.`
+function System.RemoveCCommand(sCCommandName) end
 
-function System.AddKeyBind() end
+--- Add a Key Binding
+---@param sKey string `Key to bind`
+---@param sCommand string `Command to bind`
+function System.AddKeyBind(sKey, sCommand) end
 
 function System.SetScissor() end
 
@@ -278,10 +295,9 @@ function System.IsDevModeEnable() end
 
 function System.SaveConfiguration() end
 
-function System.BrowseURL() end
-
 function System.GetSystemMem() end
 
+--- Quit the Game
 function System.Quit() end
 
 function System.ClearKeyState() end

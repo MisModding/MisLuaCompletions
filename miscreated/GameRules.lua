@@ -115,7 +115,7 @@ function GameRules.CanUsePowerStruggleNode( userId, entityId ) end
 ---* Send a Message to a Player.
 ---| msgtype can be either 0 or 4
 ---@param msgtype number
----@param playerId entityId
+---@param playerId EntityId
 ---@param message string
 function GameRules:SendTextMessage(msgtype, playerId, message) end
 

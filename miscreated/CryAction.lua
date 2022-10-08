@@ -28,7 +28,7 @@ local CryAction = {
     IsDedicatedServer = function() end,
 
     ---* Checks the current players list.
-    ---@return table<number,player>
+    ---@return table<number,Miscreated.Player>
     GetPlayerList = function() end,
 
     IsGameObjectProbablyVisible = function(gameObject) end,
