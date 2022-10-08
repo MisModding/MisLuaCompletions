@@ -1,9 +1,8 @@
----@alias entity CE3.entity
----@alias entityId userdata|number
+---@alias EntityId userdata|number
 
 -- basic entity class
----@class CE3.entity
----@field id entityId - entityId of the current entity
+---@class CE3.Entity
+---@field id EntityId - entityId of the current entity
 local Entity = {}
 function Entity:DeleteThis(  ) end
 

@@ -27,13 +27,16 @@
 System.AddCCommand("DumpEntities", "DumpEntities", "Dumps all entity identifiers (EntityId), names, classes, positions and angles, which are currently used in the map, to console.")
 
 
-local player = System.GetEntity(0) ---@type player
+local player = System.GetEntity(0) ---@type Miscreated.Player
 
 player:SetPos({x = 0, y = 0, z = 0})
 
 local pos = player:GetPos()
 
-local itm = System.GetEntityByName('AppleFresh') ---@type item
+local itm = System.GetEntityByName('AppleFresh') ---@type Miscreated.Item
 
 
-itm.item:GetMaxStackSize()
+local stacksize = itm.item:GetMaxStackSize()
+
+
+RegisterCallbackReturnAware()

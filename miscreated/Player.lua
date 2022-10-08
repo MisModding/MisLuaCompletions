@@ -1,7 +1,6 @@
----@alias player Miscreated.Player
----@alias playerId userdata|number
+---@alias PlayerId userdata|number
 
----@class Miscreated.Player : CE3.entity
+---@class Miscreated.Player : CE3.Entity
 ---@field player    playerInterface
 ---@field actor     actorInterface
 local Player = {}
